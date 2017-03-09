@@ -201,7 +201,5 @@ Here's a [link to my video result](https://youtu.be/dozR4N9QvIs)
 
 ###Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Although I have processed the project video as I expected but the biggest issue I found is the time it takes to process the video. My pipeline takes several minutes to process the 50s long video. That means the pipeline cannot be used in real-time. Then the whole pipeline become useless because it is not practical. So the next step I need to focus on to speed up the process and make it a real-time application. More techniques need to be tried out. 
 
