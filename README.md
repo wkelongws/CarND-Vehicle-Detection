@@ -41,12 +41,12 @@ The goals / steps of this project are the following:
 As inspired by the lecture videos, I decided to used all three kinds of features in my model: 1. space_binned pixel intensity, 2. histogram of all color space channels and 3. HOG features.
 
 Before extracting all the features, the first step is decide which color space I am gona working on. After reading through people's discussion on slack and experimenting a little a bit, I decided to use LUV as suggested by a lot people. These two figure shows the features I extracted from two sample car images using LUV color space and a certain combination of hyperparameters:
-![alt text][car_feature_0]
-![alt text][car_feature_1]
+![alt text][car_features_0]
+![alt text][car_features_1]
 
 Correspondingly, these two figures show the features I extracted from two sample non_car images using LUV color space and the same combination of hyperparameters:
-![alt text][non_car_feature_0]
-![alt text][non_car_feature_1]
+![alt text][non_car_features_0]
+![alt text][non_car_features_1]
 
 As shown in the above figures, the features finally used in building the classifier are the 2nd, 3rd and 4th columns. All the pixel intensities in LUV channels of the reduced size image, histogram values of all LUV channels of the raw_size image and the HOG features of all LUV channels of the raw_size image are vectorized into a long vetor which is one training sample for the classifier.
 
