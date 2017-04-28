@@ -1,5 +1,6 @@
-##Vehicle Detection
-###Detect and locate vehicle in a project video
+## Vehicle Detection
+
+### Detect and locate vehicle in a project video
 
 ---
 
@@ -28,15 +29,13 @@ The goals / steps of this project are the following:
 [car_searching_1]: ./output_images/car_searching_1.png
 [car_searching_3]: ./output_images/car_searching_3.png
 
-## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
-###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
-###There are three major tasks in my project: 1. building a car classifier; 2. frame-wise  car search; and 3. video implementation
+### There are three major tasks in my project: 1. building a car classifier; 2. frame-wise  car search; and 3. video implementation
 
-###Car classifier
+### Car classifier
 
-####Features
+#### Features
 
 As inspired by the lecture videos, I decided to used all three kinds of features in my model: 1. space_binned pixel intensity, 2. histogram of all color space channels and 3. HOG features.
 
@@ -59,7 +58,7 @@ To find the corresponding codes for the described tasks above, you can search:
 in "Vehicle_Detection_visualization_module.ipynb".
 
 
-####Search for the best hyperparameters for feature extraction
+#### Search for the best hyperparameters for feature extraction
 
 After I decided to use all three kinds of features described above in my model, I need to find the best hyperparameters to use for extracting features.
 The hyperparameters include: hist_bins, small_size, orientations, pix_per_cell,cell_per_block. The description and the experimented values for these hyperparameters are shown in the table below:
@@ -163,7 +162,7 @@ To find the corresponding codes for the described tasks above, you can search:
 in "Vehicle_Detection_visualization_module.ipynb".
 
 
-###frame-wise  car search
+### frame-wise  car search
 
 The two examples here inlustrates the entire car search pipeline:
 ![alt text][car_searching_3]
@@ -199,7 +198,7 @@ Here's a [link to my video result](https://youtu.be/dozR4N9QvIs)
 
 ---
 
-###Discussion
+### Discussion
 
 1. This project used computer vision techniques and some of those techniques are sensitive to the hyperparameter selected. The searching windows are restricted to the specific area where the cars are suppose to be in the project video. The area should be able to generalized well to other videos but if the view and layout of the road are significally different from the project video the searhcing schema could fail.
 
